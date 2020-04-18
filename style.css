@@ -1,0 +1,174 @@
+.container-fluid {
+    width: 92%;
+}
+
+ul.nav {
+    flex-direction: row;
+}
+
+.top {
+    display: flex;
+    background-color: #f72210;
+    color: white;
+}
+
+.top .buttons {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.top button {
+    color: white;
+}
+
+.featured-topics {
+    padding-right: 0;
+}
+
+.featured-topics > h4,
+.top-story h4,
+.opinion > h4 {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.featured-topics figure img {
+    width: 100%;
+}
+
+.featured-topics figure figcaption {
+    position: relative;
+}
+
+.featured-topics h4:last-child {
+    padding: 0.8em 0;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    color: black;
+}
+
+figcaption .us {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: #e9e9ea;
+    color: #f42210;
+    padding: 0.3em 0.8em;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.top-story .top-article {
+    border-bottom: 1px solid #dddddd;
+}
+
+.top-story .top-article > h4 {
+    padding-left: 15px;
+}
+
+.top-story .top-article figcaption {
+    position: relative;
+}
+
+.top-story figure img {
+    width: 100%;
+}
+
+.top-story .extra {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1em;
+}
+
+.top-story .extra img {
+    max-width: 16%;
+    margin-right: 0.8em;
+}
+
+.top-story .extra h3 {
+    font-size: 1rem;
+}
+
+.top-story .extra p {
+    font-size: 0.8rem;
+}
+
+.top-story .extra {
+    flex-direction: row;
+}
+
+.pandemic-heroes figure h3,
+.culture-travel figure h3 {
+    font-size: 1.3rem;
+}
+
+.pandemic-heroes figure p,
+.culture-travel figure p {
+    color: #939393;
+    font-size: 0.9rem;
+}
+
+.pandemic-heroes figure figcaption,
+.culture-travel figure figcaption {
+    position: relative;
+}
+
+.pandemic-heroes .topic,
+.culture-travel .topic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: #c2d4d7;
+    padding: 0.1em 0.5em;
+    font-size: 0.8rem;
+}
+
+.more-stories figure {
+    display: flex;
+    border-top: 1px solid #dddddd;
+    padding: 0.8rem;
+    align-items: flex-start;
+    margin-bottom: -1rem;
+}
+
+.more-stories figure img {
+    max-width: 16%;
+    margin: 0 0.8em 0.8em 0;
+}
+
+.more-stories figure figcaption > h4 {
+    color: black;
+    font-weight: bold;
+}
+
+.opinion {
+    padding-left: 0;
+}
+
+.opinion figure {
+    display: flex;
+    padding: 0;
+    border-bottom: 1px solid #d9d9d9;
+    align-items: flex-start;
+}
+
+.opinion figure img {
+    max-width: 20%;
+    min-width: 20%;
+    margin: 0 1em 1em 0;
+}
+
+.opinion figcaption h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.opinion figcaption span {
+    font-weight: bold;
+    color: #55555a;
+    font-size: 0.9rem;
+    margin-bot: 0.3em;
+}
