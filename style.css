@@ -70,7 +70,7 @@ body {
     background-color: #f72210;
 }
 
-.top button:last-child {
+.top .subscribe-btn {
     background-color: white;
     color: #f42210;
 }
