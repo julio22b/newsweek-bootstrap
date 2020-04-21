@@ -210,12 +210,8 @@ figcaption .us,
     font-weight: bold;
 }
 .debate .debate-participant {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     border-top: 1px solid #d9d9d9;
     border-bottom: none;
-    margin-bottom: 0;
 }
 
 .debate .debate-participant img {
@@ -226,10 +222,6 @@ figcaption .us,
 .debate .debate-participant figcaption {
     color: #55555a;
     font-size: 0.8rem;
-}
-
-.debate .debate-participant figcaption span {
-    color: black;
 }
 
 .versus {
