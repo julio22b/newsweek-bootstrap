@@ -1,5 +1,6 @@
 body {
     background-color: #f4f5f6;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container-fluid {
@@ -9,6 +10,58 @@ body {
 
 @media screen and (max-width: 1300px) {
     .container-fluid {
+        width: 100%;
+    }
+}
+
+/* fix font sizes on large screens */
+
+@media screen and (min-width: 992px) {
+    .small,
+    .pandemic-heroes p {
+        font-size: 1rem;
+    }
+
+    .in-the-magazine h6 {
+        font-size: 1.3rem;
+    }
+
+    .in-the-magazine .hide-img {
+        overflow: hidden;
+    }
+
+    .in-the-magazine .contained-img img {
+        width: 150%;
+        margin: 0 -25%;
+    }
+
+    .border-bottom {
+        border-color: #d9d9d9 !important;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .small,
+    .pandemic-heroes p,
+    .in-the-magazine h6 {
+        font-size: 1rem;
+    }
+    .in-the-magazine .hide-img {
+        overflow: hidden;
+    }
+
+    .in-the-magazine .contained-img img {
+        width: 150%;
+        margin: 0 -25%;
+    }
+
+    .border-bottom {
+        border-color: #d9d9d9 !important;
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .in-the-magazine .contained-img img {
         width: 100%;
     }
 }
@@ -24,19 +77,6 @@ body {
 
 header {
     border-bottom: 1px solid #dfdfdf;
-    margin-bottom: 1em;
-}
-
-header .list-group-item {
-    border-left: none;
-}
-
-header .navbar li:last-child {
-    border: none;
-}
-
-.featured-topics {
-    padding-right: 0;
 }
 
 .featured-topics > h4,
@@ -46,22 +86,6 @@ header .navbar li:last-child {
 .latest-news > h4 {
     color: #a0a0a0;
     font-size: 0.9rem;
-    font-weight: bold;
-}
-
-/* .featured-topics figure img {
-    width: 100%;
-} */
-
-/* .featured-topics figure figcaption {
-    position: relative;
-} */
-
-.featured-topics h4:last-child {
-    padding: 0.8em 0;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
-    color: black;
 }
 
 figcaption .us,
@@ -77,56 +101,9 @@ figcaption .us,
     font-size: 0.9rem;
 }
 
-.top-story .top-article {
-    margin-bottom: 0;
-}
-
-.top-story > h4 {
-    padding-left: 15px;
-}
-
-/* .top-story .top-article figcaption {
-    position: relative;
-} */
-
-/* .top-story figure img {
-    width: 100%;
-} */
-
-.top-story .extra {
-    border-top: 1px solid #dddddd;
-    padding-bottom: 1em;
-    padding-right: 0;
-    padding-top: 1em;
-}
-
-/* .top-story .extra img {
-    max-width: 16%;
-    margin-right: 0.8em;
-} */
-
-.top-story .extra h3 {
-    font-size: 1rem;
-}
-
-.top-story .extra p {
-    font-size: 0.8rem;
-}
-
-/* .top-story .extra {
-    flex-direction: row;
-} */
-
 .pandemic-heroes > h3,
 .culture-travel > h3 {
-    font-size: 0.9rem;
     color: #818181;
-    font-weight: bold;
-}
-
-.pandemic-heroes figure h3,
-.culture-travel figure h3 {
-    font-size: 1.3rem;
 }
 
 .pandemic-heroes figure p,
@@ -134,11 +111,6 @@ figcaption .us,
     color: #939393;
     font-size: 0.9rem;
 }
-
-/* .pandemic-heroes figure figcaption,
-.culture-travel figure figcaption {
-    position: relative;
-} */
 
 .pandemic-heroes .topic,
 .culture-travel .topic {
@@ -151,56 +123,12 @@ figcaption .us,
     font-size: 0.8rem;
 }
 
-/* .more-stories figure {
-    border-top: 1px solid #dddddd;
-    padding: 0.8rem 0;
-} */
-
-/* .more-stories figure img {
-    max-width: 16%;
-} */
-
-/* .more-stories figure figcaption > h4 {
-    color: black;
-    font-weight: bold;
-} */
-
-/* .opinion {
-    padding-left: 0;
-} */
-
-/* .opinion figure {
-    display: flex;
-    padding: 0;
-    border-bottom: 1px solid #d9d9d9;
-    align-items: flex-start;
-} */
-
-/* .opinion .last-opinion {
-    border: none;
-} */
-
-/* .opinion figure img {
-    max-width: 20%;
-    min-width: 20%;
-    margin: 0 1em 1em 0;
-} */
-
-/* .opinion figcaption h4 {
-    font-size: 1rem;
-    font-weight: bold;
-} */
-
 .opinion figcaption span {
     font-weight: bold;
     color: #55555a;
     font-size: 0.9rem;
     margin-bottom: 0.3em;
 }
-
-/* .debate {
-    padding: 1em 0;
-} */
 
 .debate .debator-top {
     border-top: 4px solid #f92859;
@@ -242,11 +170,6 @@ figcaption .us,
     font-weight: bold;
 }
 
-/* .latest-news figure figcaption {
-    font-weight: bold;
-    font-size: 1.1;
-} */
-
 .sign-up {
     background-color: #f4f5f6;
 }
@@ -254,12 +177,6 @@ figcaption .us,
 .sign-up div span {
     background-color: #f72210;
 }
-
-/* .sign-up div p {
-    font-weight: bold;
-    padding: 0.4em 0.2em;
-    margin-top: 0.7em;
-} */
 
 .sign-up button {
     background-color: #666666;
@@ -269,21 +186,6 @@ figcaption .us,
     margin: 0 0.7em;
 }
 
-.sign-up > p {
-    padding: 0.7em;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-/* .in-the-magazine > h3,
-.editors-pick > h3 {
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #d9d9d9;
-} */
-
 .in-the-magazine > h3 span,
 .editors-pick > h3 span {
     background-color: #f72210;
@@ -292,30 +194,9 @@ figcaption .us,
     padding: 0.2em 0.3em;
 }
 
-/* .in-the-magazine figure {
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 0;
-    flex: 0 0 22.5%;
-    max-width: 22.5%;
-} */
-
 .in-the-magazine .issue button {
     background-color: #f4f5f6;
 }
-
-/* .in-the-magazine .side img {
-    width: 150%;
-    margin-left: -25%;
-} */
-
-/* .in-the-magazine .side {
-    justify-content: space-around;
-} */
 
 .in-the-magazine .topic {
     color: #f72210;
